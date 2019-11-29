@@ -1,0 +1,57 @@
+using System;
+using System.Threading;
+public class LeakyBucket
+{
+   public static void Main(String [] args)
+   {
+       Leaky l=new Leaky();
+       Console.WriteLine("enter the number of packets");
+       n=Convert.ToInt32(Console.ReadLine());
+       l.insert(size);
+       l.delete();
+   }
+ }
+ class Leaky
+ {
+    int q[],f=0,r=0,size;
+    void insert(int n)
+    {
+      q=new int[10];
+      for(int i=0;i<n;i++)
+      {
+              Console.WriteLine("enter "+i+"element:");
+              int e=Convert.ToInt32(ConsoleReadLine());
+              if(r+1>10)
+              {
+                 Concsole.WriteLine("lost packet"+ele);
+                 break;
+                 }
+                 else
+                 {
+                 r++;
+                 q[i]=ele;
+                 }
+        }
+        void delete()
+        {
+           if(r==0)
+           Console.WriteLine("\no packets");
+           else
+           {
+             for(int i=f;i<r;i++)
+             {
+                try
+                {
+                    Thread.sleep(60000);
+                 }
+                 catch(Exception e){}
+                 Console.WriteLine("leaked packets:"+q[i]);
+                 f++;
+            }
+            }
+            }
+            }
+            
+                    
+                
+       
